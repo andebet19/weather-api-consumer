@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather API Consumer</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; background-color: #f4f7f6; color: #333; }
+        .container { max-width: 600px; margin: 0 auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        .loading { color: #3182ce; font-weight: bold; display: none; }
+        .error { color: #e53e3e; font-weight: bold; display: none; }
+        ul { list-style-type: none; padding: 0; }
+        li { padding: 10px; border-bottom: 1px solid #e2e8f0; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Hawassa Weekly Weather</h1>
+        
+        <!-- Status Messages -->
+        <div id="loading-state" class="loading">Loading weather data...</div>
+        <div id="error-state" class="error"></div>
+
+        <!-- Weather List Container -->
+        <ul id="weather-list"></ul>
+    </div>
+
+    <!-- We link to the compiled JavaScript file that TypeScript will generate -->
+    <script type="module" src="src/app.js"></script>
+</body>
+</html>
