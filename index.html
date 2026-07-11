@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather API Consumer</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; background-color: #f4f7f6; color: #333; }
+        .container { max-width: 600px; margin: 0 auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        .search-container { display: flex; gap: 10px; margin-bottom: 20px; }
+        .search-container input { flex: 1; padding: 10px; border: 1px solid #cbd5e1; border-radius: 4px; font-size: 16px; }
+        .search-container button { padding: 10px 20px; background-color: #3182ce; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 16px; font-weight: bold; }
+        .search-container button:hover { background-color: #2b6cb0; }
+        .loading { color: #3182ce; font-weight: bold; display: none; }
+        .error { color: #e53e3e; font-weight: bold; display: none; }
+        ul { list-style-type: none; padding: 0; }
+        li { padding: 10px; border-bottom: 1px solid #e2e8f0; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1 id="city-title">Weather Dashboard</h1>
+        
+        <!-- Search Feature -->
+        <div class="search-container">
+            <input type="text" id="city-input" placeholder="Enter city name... (e.g., London, Tokyo)">
+            <button id="search-btn">Search</button>
+        </div>
+
+        <!-- Status Messages -->
+        <div id="loading-state" class="loading">Loading weather data...</div>
+        <div id="error-state" class="error"></div>
+
+        <!-- Weather List Container -->
+        <ul id="weather-list"></ul>
+    </div>
+
+    <!-- We link to the compiled JavaScript file that TypeScript will generate -->
+    <script type="module" src="dist/app.js"></script>
+</body>
+</html>

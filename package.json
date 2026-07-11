@@ -1,0 +1,26 @@
+{
+  "name": "weather-api-consumer",
+  "version": "1.0.0",
+  "description": "Typed API Consumer using TypeScript and Open-Meteo API",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "start": "npm run build && npx serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andebet19/weather-api-consumer.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andebet19/weather-api-consumer/issues"
+  },
+  "homepage": "https://github.com/andebet19/weather-api-consumer#readme",
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
